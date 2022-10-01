@@ -33,7 +33,27 @@
         background: #FFA501;
         background: $main-color;
         border-radius: 100%;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
 
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &:after {
+          content: '';
+          width: 1px;
+          height: calc(100% + 16px);
+          position: absolute;
+          top: -16px;
+          left: 0;
+          background-color: #000;
+
+
+        }
       }
     }
   }
@@ -41,7 +61,46 @@
 
 
   &__item {
-    padding-top: 45px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 43px;
+      height: 1px;
+      left: 0;
+      top: 52px;
+      background-color: #000;
+    }
+    &-head {
+      position: relative;
+      padding: 35px 0 0 100px;
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+    &-body {
+      padding-left: 43px;
+      margin: 12px 0 0 0;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-icon {
+      position: absolute;
+      top: 35px;
+      left: 43px;
+      @include before_circle;
+      svg {
+        position: absolute;
+        left: 17px;
+        top: 14px;
+
+      }
+
+    }
+    &-location {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 
 
