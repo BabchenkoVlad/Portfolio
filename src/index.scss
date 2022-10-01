@@ -11,7 +11,7 @@
 @import 'sass/blocks/sidepanel';
 @import 'sass/blocks/menu';
 @import 'sass/blocks/about';
-@import 'sass/blocks/sidepanel';
+@import 'sass/blocks/resume';
 @import 'sass/blocks/sidepanel';
 
 
@@ -30,5 +30,5 @@
     width: 60px;
     height: 3px;
     background-color: $main-color;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }

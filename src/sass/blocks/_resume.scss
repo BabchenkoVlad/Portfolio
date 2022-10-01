@@ -1,0 +1,49 @@
+.resume {
+  padding-top: 120px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    margin-top: 60px;
+    padding: 0 65px;
+    display: grid;
+    grid-template-columns: 425px 425px;
+    column-gap: 136px;
+  }
+
+  &__column {
+    &-title {
+      position: relative;
+      padding-left: 35px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: #FFA501;
+        background: $main-color;
+        border-radius: 100%;
+
+      }
+    }
+  }
+
+
+
+  &__item {
+    padding-top: 45px;
+  }
+
+
+
+}
