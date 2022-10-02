@@ -10,3 +10,10 @@ closeElem.addEventListener('click', () => {
   menu.classList.remove('active');
 });
 
+
+const percents = document.querySelectorAll('.skills__skill-percent'),
+      lines = document.querySelectorAll('.skills__skill-slider span');
+
+percents.forEach( (item, i) => {
+  lines[i].style.width = item.innerHTML;
+});

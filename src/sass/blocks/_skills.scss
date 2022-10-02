@@ -58,9 +58,19 @@
     row-gap: 30px;
     &-item {
       display: grid;
-      grid-template: minmax(21px, auto) 14px / 200px 35px;
+      grid-template-columns: 200px 35px;
+      grid-template-rows: minmax(21px, auto);
       justify-content: space-between;
       align-content: space-between;
+    }
+    &-title {
+      position: relative;
+      padding-left: 13px;
+      @include before_circle;
+      &:before {
+        left: 0;
+        top: -6px;
+      }
     }
 
     &-slider {
