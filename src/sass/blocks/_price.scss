@@ -21,6 +21,7 @@
     position: relative;
     display: grid;
     grid-template: 21px 18px / 221px 145px;
+    // repeat(2, minmax(21px, auto)) / repeat(2, auto)
     justify-content: space-between;
     align-content: space-between;
     &::before {
